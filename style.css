@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+#Topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: silver;
+}
+
+#Topbar .Header_logo {}
+
+#Topbar .Header_logo img {
+    width: 80px;
+}
+
+#Topbar nav {
+    height: -webkit-fill-available;
+    padding: 20px;
+}
+
+#Topbar nav ul {
+    display: flex;
+    text-align: center;
+}
+
+#Topbar nav ul li {
+    margin: auto 30px;
+    list-style: none;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    #Topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: column;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+    
+}
